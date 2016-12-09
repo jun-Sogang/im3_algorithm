@@ -6,11 +6,11 @@ using namespace std;
 
 int main(void)
 {
-    char str[103];
+    string str;
     int number[26] = { 0,};
 
     cin >> str;
-    for (int i =0; i<strlen(str); i++) {
+    for (int i =0; i<str.length(); i++) {
         number[str[i] - 97] += 1;
     }
     for (int i = 0; i < 26; i++) {
